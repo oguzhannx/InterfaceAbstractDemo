@@ -17,7 +17,7 @@ public class MernisServiceAdapter implements CustomerCheckService {
 
 		try {
 			result = proxy.TCKimlikNoDogrula(Long.parseLong(customer.getNationalityId()),
-					customer.getFirstName().toUpperCase(), customer.getLastName().toUpperCase(), 2000);
+					customer.getFirstName().toUpperCase(), customer.getLastName().toUpperCase(), customer.getDateOfBirth().getYear());
 		} catch (NumberFormatException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

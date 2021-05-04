@@ -17,7 +17,7 @@ public class StarbucksCustomerManager extends BaseCustomerManager implements Cus
 		if (checkService.isRealPerson(customer)) {
 			System.out.println("Veritabanýna eklendi : " + customer.getFirstName());
 		}else {
-			System.out.println("Ekleme Bþarýsýz.");
+			System.out.println("Ekleme Baþarýsýz.");
 		}
 
 	}
